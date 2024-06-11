@@ -20,3 +20,14 @@ console.log(newstring);
 const anotherstring = gamename.slice(-8 , 4);
 console.log(anotherstring);
 
+
+const newstringone = "    Keshav   ";
+console.log(newstringone);
+console.log(newstringone.trim());
+
+const url = "https://keshav.com/keshav%20goyal"
+
+console.log(url.replace('%20' , '-'));
+console.log(url.includes('goyal'));
+
+console.log(gamename.split('-'));
