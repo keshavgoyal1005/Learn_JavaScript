@@ -4,9 +4,9 @@ console.log(mydate.toDateString());
 console.log(mydate.toLocaleString());
 console.log(mydate.toString());
 
-console.log(typeof mydate);   // Note
+console.log(typeof mydate);   // Note the type of mydate is also object
 
-let currentdate = new Date(2023 , 5 , 5);
+let currentdate = new Date(2023 , 6 , 5);
 
 console.log(currentdate.toDateString());
 console.log(currentdate.toLocaleDateString());

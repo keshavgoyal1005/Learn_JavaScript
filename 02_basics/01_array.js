@@ -2,7 +2,7 @@ const arr = [0 , 7 , 8 , 9 , 10];
 const names  = ["Keshav" , "Abhay"];
 const arr1 = new Array(1,2,3,4);
 
-// copy operation in array in javascript means it will make a sshallow copies means the change in the copy will also reflect in the main array 
+// copy operation in array in javascript means it will make a shallow copies means the change in the copy will also reflect in the main array 
 
 // console.log(arr[1]);
 // console.log(arr1[3]);

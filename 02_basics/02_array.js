@@ -5,7 +5,8 @@ const morenames = ["Ram" , "Shyam" , "Shiva"];
 // console.log(names);
 // console.log(names[3]);
 
-// const allname = names.concat(morenames);
+// const allname = names.concat(morenames);      // concat function will not chnage in the exsiting rray. Rather it will store in the new variable 
+
 // console.log(allname);
 
 

@@ -3,7 +3,7 @@
 
 
 
-//we are talking aabout object literals 
+//we are now talking about object literals 
 
 const mysym = Symbol("key1");
 

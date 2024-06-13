@@ -30,4 +30,4 @@ const url = "https://keshav.com/keshav%20goyal"
 console.log(url.replace('%20' , '-'));
 console.log(url.includes('goyal'));
 
-console.log(gamename.split('-'));
+console.log(gamename.split('a'));
