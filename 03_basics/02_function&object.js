@@ -37,8 +37,8 @@ handleObject({
 
 const arr = [111 , 222 , 333 , 444];
 
-function returnSecondValue(arr){
-    return arr[1];
+function returnSecondValue(brr){
+    return brr[1];
 }
 
 console.log(returnSecondValue(arr));
