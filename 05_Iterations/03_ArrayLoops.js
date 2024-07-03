@@ -1,7 +1,7 @@
 const arr = [1, 2, 3, 4, 5];
 
 
-// --------------------------------------Forof Loop-------------------------------
+// --------------------------------------Forof Loop -> array , map, Not object
 for (const num of arr) {
     // console.log(num);    
 }

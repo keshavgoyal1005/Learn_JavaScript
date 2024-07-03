@@ -11,6 +11,7 @@ console.log(changeda);
 
 let scoreb = "33abc";
 let changed_b = Number(scoreb);
+console.log("");
 console.log(typeof changed_b);
 console.log(changed_b);
 
@@ -33,6 +34,6 @@ let changed_e = Boolean(isloggedin);
 console.log(changed_e);
 
 // 1 -> true , 0->false
-// "" -> false , "Keshav" -> false
+// "" -> false , "Keshav" -> true
 
 

@@ -27,6 +27,7 @@ const user = {
 // const chai = function(){
 //     let username = "Keshav";
 //     console.log(this.username);        // we always show undefined 
+//     console.log(this);
 // }
 
 // chai();

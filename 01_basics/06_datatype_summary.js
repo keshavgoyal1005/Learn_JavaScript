@@ -19,7 +19,7 @@ const id2 = Symbol('123');
 console.log(id1 === id2); // ->false
 // symbol keyword will provide us the uniquesness 
 // and the return type of this datatype is also symbol 
-
+// Each symbol is unique in this world 
 
 
 

@@ -20,6 +20,7 @@ const arr1 = new Array(1,2,3,4);
 // console.log(arr.indexOf(10));
 
 // let newarr = arr.join();     // it converts the array into string 
+// console.log(typeof newarr);
 
 // console.log(arr);
 // console.log(newarr);

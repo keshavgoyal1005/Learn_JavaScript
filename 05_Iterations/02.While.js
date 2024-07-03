@@ -13,4 +13,5 @@ do {
     score+=2;    
 } while (score>=50);
 
+console.log(score);
 // Here in do while loop the condition will execute for atleast one time for sure 

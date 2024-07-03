@@ -1,4 +1,4 @@
-//--------------------------------ForIn Loop--------------------------
+//--------------------------------ForIn Loop -> array , object, not map
 
 const myobject = {
     js: "Javascript",
