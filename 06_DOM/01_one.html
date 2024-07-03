@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, accusamus!</p>
+<body class="bg-black">
+    <div>
+        <h1 id= "title" class="heading">DOM learning <span style="display: none;">test text</span></h1>
+        <h2>Lorem1 ipsum dolor sit.</h2>
+        <h2>Lorem2 ipsum dolor sit.</h2>
+        <h2>Lorem3 ipsum dolor sit.</h2>
+        <h2>Lorem4 ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Itaque, accusamus!</p>
+
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+            <li class = "list-item">Four</li>
+        </ul>
     </div>
 </body>
 </html>
+
+
+
+// Note : if we have innerText then it will only show the text that is visible 
+// Note : If we have textContent then it will show the text they we have 
+// Note : document.querySelector('h2') will give me the first h2 only 
+// Note : document.querySelectorAll('li')   will give us a nodelist e store it in a temp variable
+          temp[0].style.backgroundColor = 'red' will change the first li color
+
+//Note : The NodeList is diiferent from the array so we should use the foreach loop
+//Note : if we use document.getElementsByClassName('infobox-label') it will give us the HTMLcollection. so we       cannot use the foreach loop in it so we can use the Array.from() to convert it into array
