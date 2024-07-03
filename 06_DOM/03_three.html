@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DOM_2</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('h1');
+    console.log(div);
+    div.className = "main";
+    div.id = "one";
+    div.setAttribute("title" , "general");
+    div.style.backgroundColor = 'green';
+    div.style.padding = "12px";
+    div.innerText = "Keshav Goyal";
+    // const add = document.createTextNode("keshav goyal");
+    // div.appendChild(add);
+
+    document.body.appendChild(div);
+</script>
+</html>
