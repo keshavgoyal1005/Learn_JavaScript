@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM 4</title>
 </head>
-<body>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
     
 </body>
+    <script>
+        function addlanguage(mylan){
+            const li = document.createElement('li');
+            li.innerHTML = `${mylan}`;
+            document.querySelector('.language').appendChild(li);
+        }
+
+        addlanguage("python");
+        addlanguage("C++");
+        addlanguage("typescript");
+
+        function addoptilang(item){
+            const li = document.createElement('li');
+            li.append(document.createTextNode(item));
+            document.querySelector('.language').appendChild(li);
+        }
+        addoptilang("golang");
+
+
+
+        //Edit 
+        const secondlang = document.querySelector("li:nth-child(2)");
+        const newli = document.createElement('li');
+        newli.textContent = "mojo";
+        secondlang.replaceWith(newli)
+
+
+        //edit 
+        const firstlanf = document.querySelector("li:nth-child(1)");
+        const newi = document.createElement('li');
+        newi.textContent = "new javascript";
+        firstlanf.replaceWith(newi);
+
+        //remove 
+        const lasti = document.querySelector('li:last-child');
+        lasti.remove();
+    </script>
 </html>
