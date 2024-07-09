@@ -1,0 +1,28 @@
+Javascript: 
+    it is always a asyncronous langusge 
+    it is a single treaded :- which also leads to slowing down 
+    we never get a Javascript engine it will always in a run time environment 
+
+
+Execution context
+    execute one line of code at a time 
+    |-> console log 1
+    |-> consoel log 2
+        _____________     _____________
+    |-> |CALL STACK |     |MEMORY HEAP|              -> it is also JS engine
+        -------------     -------------
+
+        each operaation waits for the last one to complete before executing 
+
+
+
+
+Blocking Codee Vs Non Blocking code 
+
+    Blocking code - Block the flow of program 
+    ex - read file sync
+    usecase - during a sign up in any website 
+
+    Non Blocking Code - Does not Block Execution
+    ex - Read file asyncronous
+    usecase - wwhile we are executing a code
