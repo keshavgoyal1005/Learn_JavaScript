@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px;
+            font-size: 3em;
+            margin-bottom: 20px;
+            transition: color 0.5s;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button#start {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button#start:hover {
+            background-color: #45a049;
+        }
+
+        button#stop {
+            background-color: #f44336;
+            color: white;
+        }
+
+        button#stop:hover {
+            background-color: #da190b;
+        }
+
+
+
+        /* footer  */
+
+        :root {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: rgb(26, 18, 75);
+            color: white;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learning to change backgroound color and heading</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+        <!-- Footer -->
+        <div class="footer">&copy;<span id="year"> </span><span>Made by Keshav Goyal</span></div>
+</body>
+<script>
+    function getRandomColor() {
+        // Generate a random number between 0 and 16777215 (decimal representation of #FFFFFF)
+        const randomColor = Math.floor(Math.random() * 16777216);
+
+        // Convert the number to hexadecimal and pad with leading zeros if necessary
+        const hexColor = `#${randomColor.toString(16).padStart(6, '0')}`;
+
+        return hexColor;
+    }
+    let intervalId;
+    document.getElementById('start').addEventListener('click', function () {
+        intervalId = setInterval(() => {
+            const hexcode = getRandomColor();
+            document.body.style.backgroundColor = hexcode;
+
+            const hexForh1 = getRandomColor();
+            document.querySelector('h1').style.color = hexForh1;
+            // console.log("keshav")
+        }, 1000);
+    })
+    document.getElementById('stop').addEventListener('click', function () {
+        clearInterval(intervalId);
+    })
+
+
+
+
+
+
+     // footer
+
+     $(document).ready(function () {
+        let year = document.querySelector('#year');
+        year.innerText = new Date().getFullYear();
+    });
+
+
+
+</script>
+
+</html>
